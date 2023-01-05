@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="829.0" style="-fx-background-color: #a32cc4;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AptControl">
+    <children>
+        <TableView fx:id="AptTable" layoutX="13.0" layoutY="83.0" prefHeight="342.0" prefWidth="800.0">
+            <columns>
+                <TableColumn fx:id="AptIDCol" prefWidth="57.0" text="Appt. ID" />
+                <TableColumn fx:id="TitleCol" prefWidth="43.0" text="Title" />
+                <TableColumn fx:id="DescriptionCol" prefWidth="59.0" text="Desc." />
+                <TableColumn fx:id="LocationCol" prefWidth="67.0" text="Location" />
+                <TableColumn fx:id="ContactCol" maxWidth="7000.0" prefWidth="97.0" text="Contact" />
+                <TableColumn fx:id="TypeCol" prefWidth="68.0" text="Type" />
+                <TableColumn fx:id="StrtTimeCol" prefWidth="120.0" text="Start Date/Time" />
+                <TableColumn fx:id="EndTimeCol" prefWidth="156.0" text="End Date/Time" />
+                <TableColumn fx:id="CustIDCol" prefWidth="65.0" text="Cust. ID" />
+                <TableColumn fx:id="UsrIDCol" prefWidth="67.0" text="User ID" />
+            </columns>
+        </TableView>
+        <Button fx:id="createAptButt" layoutX="22.0" layoutY="438.0" mnemonicParsing="false" onAction="#CreateApt" text="CREATE APPT." />
+        <Button fx:id="UpdateCustButt" layoutX="174.0" layoutY="438.0" mnemonicParsing="false" onAction="#updateApt" text="UPDATE APPT." />
+        <Button fx:id="DeleteAptButt" layoutX="338.0" layoutY="438.0" mnemonicParsing="false" onAction="#delApt" text="DELETE APPT." />
+        <Label fx:id="Header" layoutX="327.0" layoutY="8.0" text="APPOINTMENTS" textAlignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="AllRadButt" layoutX="22.0" layoutY="51.0" mnemonicParsing="false" onAction="#ChangeViewControl" selected="true" text="ALL">
+            <toggleGroup>
+                <ToggleGroup fx:id="ChangeView" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="WeekRadButt" layoutX="122.0" layoutY="51.0" mnemonicParsing="false" onAction="#ChangeViewControl" selected="false" text="WEEK" />
+        <RadioButton fx:id="MonthRadButt" layoutX="245.0" layoutY="51.0" mnemonicParsing="false" onAction="#ChangeViewControl" text="MONTH" />
+        <Button fx:id="SearchButton" layoutX="736.0" layoutY="39.0" mnemonicParsing="false" onAction="#SearchAppointments" text="Search" />
+        <TextField fx:id="SearchField" layoutX="502.0" layoutY="39.0" promptText="Search by Appt. ID or Title">
+            <font>
+                <Font name="System Italic" size="18.0" />
+            </font>
+        </TextField>
+        <Button fx:id="HomeButt" layoutX="752.0" layoutY="438.0" mnemonicParsing="false" onAction="#Home" text="Home" />
+    </children>
+</AnchorPane>

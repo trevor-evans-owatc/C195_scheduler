@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" style="-fx-background-color: #A32CC4;" xmlns="http://javafx.com/javafx/11.0.14-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.Login">
+    <children>
+        <Label id="header" fx:id="Ttl" alignment="CENTER" layoutX="212.0" layoutY="130.0" prefHeight="27.0" prefWidth="88.0" text="LOGIN" />
+        <TextField id="username-text-field" fx:id="UsrNameFld" layoutX="120.0" layoutY="164.0" prefHeight="39.0" prefWidth="272.0" promptText="User ID" />
+        <TextField id="password-text-field" fx:id="PwordFld" layoutX="120.0" layoutY="212.0" prefHeight="39.0" prefWidth="272.0" promptText="Password" />
+        <Label id="location-label" fx:id="LocationLbl" layoutX="93.0" layoutY="273.0" text="Location" />
+        <Button id="login-button" fx:id="LoginButt" layoutX="346.0" layoutY="260.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+        <Button id="cancel-button" fx:id="CancelButt" layoutX="497.0" layoutY="324.0" mnemonicParsing="false" onAction="#CancelButt" text="Cancel" />
+        <Label fx:id="DescripLbl" layoutX="108.0" layoutY="58.0" text="APPOINTMENT SCHEDULER">
+            <font>
+                <Font size="24.0" />
+            </font></Label>
+        <Label fx:id="loacalDis" layoutX="197.0" layoutY="273.0" text="localDis" />
+        <Label id="location-label" fx:id="timezonelbl" layoutX="93.0" layoutY="306.0" text="Time Zone" />
+        <Label fx:id="TZDis" layoutX="197.0" layoutY="306.0" text="TZDis" />
+    </children>
+</AnchorPane>

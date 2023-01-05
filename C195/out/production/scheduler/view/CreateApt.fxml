@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #a32cc4;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.CreateApt">
+    <children>
+        <Label fx:id="Header" alignment="CENTER" layoutX="153.0" layoutY="15.0" prefHeight="32.0" prefWidth="319.0" text="CREATE NEW APPOINTMENT" textAlignment="CENTER">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label fx:id="ContactLbl" layoutX="277.0" layoutY="125.0" text="CONTACT">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <Label fx:id="Title" layoutX="93.0" layoutY="125.0" text="TITLE">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <Label fx:id="DescriptLbl" layoutX="300.0" layoutY="358.0" text="DESCRIPTION">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <Label fx:id="LocationLbl" layoutX="72.0" layoutY="211.0" prefHeight="20.0" prefWidth="75.0" text="LOCATION">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <Label fx:id="TypeLbl" layoutX="94.0" layoutY="292.0" text="TYPE">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <TextField fx:id="TitleTxtField" layoutX="24.0" layoutY="149.0" prefHeight="39.0" prefWidth="170.0" />
+        <TextField fx:id="DescripTxtField" layoutX="257.0" layoutY="388.0" prefHeight="81.0" prefWidth="170.0" />
+        <TextField fx:id="LocationTxtField" layoutX="24.0" layoutY="238.0" prefHeight="39.0" prefWidth="170.0" />
+        <Button fx:id="SaveButt" layoutX="445.0" layoutY="399.0" mnemonicParsing="false" onAction="#Save" text="SAVE" />
+        <Button fx:id="cxButt" layoutX="512.0" layoutY="399.0" mnemonicParsing="false" onAction="#Cancel" text="CANCEL" />
+        <Label fx:id="AppIDLbl" layoutX="147.0" layoutY="69.0" text="APPOINTMENT ID">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="StrtLbl" layoutX="270.0" layoutY="196.0" text="START DATE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="StrtTimeLbl" layoutX="461.0" layoutY="196.0" text="START TIME">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="EndLbl" layoutX="277.0" layoutY="274.0" text="END DATE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="EndTimeLbl" layoutX="467.0" layoutY="274.0" text="END TIME">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="CustIDLbl" layoutX="441.0" layoutY="125.0" prefHeight="20.0" prefWidth="93.0" text="CUSTOMER ID">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="ApntIDTxt" disable="true" layoutX="269.0" layoutY="60.0" prefHeight="39.0" prefWidth="170.0" style="-fx-font-style: italic;" text="auto-generated">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <ComboBox fx:id="EndTimeBox" layoutX="416.0" layoutY="302.0" onAction="#SelectEndTime" prefHeight="39.0" prefWidth="170.0" />
+        <ComboBox fx:id="StrtTimeBox" layoutX="416.0" layoutY="218.0" onAction="#SelectStartTime" prefHeight="39.0" prefWidth="170.0" />
+        <ComboBox fx:id="ContactBox" layoutX="220.0" layoutY="149.0" prefHeight="39.0" prefWidth="170.0" />
+        <ComboBox fx:id="CustomIdBox" layoutX="416.0" layoutY="149.0" prefHeight="39.0" prefWidth="170.0" />
+        <DatePicker fx:id="StrtDatePicker" layoutX="224.0" layoutY="218.0" onAction="#PickStartDate" prefHeight="32.0" prefWidth="170.0" promptText="select a date" />
+        <DatePicker fx:id="EndDatePicker" layoutX="220.0" layoutY="305.0" onAction="#PickEndDate" prefHeight="32.0" prefWidth="170.0" promptText="select a date" />
+        <ComboBox fx:id="UsrIdBox" layoutX="25.0" layoutY="392.0" prefHeight="39.0" prefWidth="170.0" />
+        <Label fx:id="UsrIDLbl" layoutX="85.0" layoutY="369.0" text="USER ID">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="TypeBox" layoutX="24.0" layoutY="313.0" onAction="#SelectType" prefHeight="39.0" prefWidth="170.0" />
+      <Button fx:id="HomeButt" layoutX="41.0" layoutY="47.0" mnemonicParsing="false" onAction="#home" text="Home" />
+    </children>
+</AnchorPane>

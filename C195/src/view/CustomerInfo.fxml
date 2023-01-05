@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #a32cc4;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.CustomerInfo">
+    <children>
+        <TableView fx:id="customerTbl" layoutX="13.0" layoutY="59.0" prefHeight="261.0" prefWidth="564.0">
+            <columns>
+                <TableColumn fx:id="custIdCol" prefWidth="48.0" text="ID" />
+                <TableColumn fx:id="nameCol" prefWidth="65.0" text="Name" />
+                <TableColumn fx:id="addressCol" prefWidth="100.0" text="Address" />
+                <TableColumn fx:id="postalCodeCol" prefWidth="87.0" text="Postal Code" />
+                <TableColumn fx:id="phoneCol" prefWidth="93.0" text="Phone" />
+                <TableColumn fx:id="cntryCol" text="Country" />
+                <TableColumn fx:id="diviCol" prefWidth="110.0" text="Division" />
+            </columns>
+        </TableView>
+        <Button fx:id="CreateCustButt" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#CreateCustomer" text="CREATE CUSTOMER" />
+        <Button fx:id="UpdateButt" layoutX="33.0" layoutY="334.0" mnemonicParsing="false" onAction="#UpdateCustomer" text="UPDATE CUSTOMER" />
+        <Button fx:id="DeleteCustButt" layoutX="337.0" layoutY="334.0" mnemonicParsing="false" onAction="#DeleteCustomer" text="DELETE CUSTOMER" />
+        <Label fx:id="Header" layoutX="158.0" layoutY="24.0" prefHeight="32.0" prefWidth="122.0" text="customers" textAlignment="CENTER">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="searchTxtFld" layoutX="303.0" layoutY="20.0" prefHeight="39.0" prefWidth="187.0" promptText="search">
+            <font>
+                <Font name="System Italic" size="18.0" />
+            </font>
+        </TextField>
+        <Button fx:id="SearchButt" layoutX="490.0" layoutY="20.0" mnemonicParsing="false" onAction="#SearchCustomers" prefHeight="39.0" prefWidth="79.0" text="Search" />
+      <Button fx:id="HomeButt" layoutX="530.0" layoutY="359.0" mnemonicParsing="false" onAction="#CancelEvent" text="Cancel" />
+      <Button fx:id="AptButt" layoutX="191.0" layoutY="334.0" mnemonicParsing="false" onAction="#AptDisplay" text="Appointments" />
+    </children>
+</AnchorPane>
